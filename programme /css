@@ -1,0 +1,182 @@
+
+.bouton-a{
+    color: black;
+    background-color:blue;
+    align-items: center;
+    padding: 20px 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.bouton-b{
+    color: black;
+    background-color:green;
+    align-items: center;
+    padding: 20px 130px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.bouton-c{
+    color: black;
+    background-color:yellow;
+    align-items: center;
+    padding: 20px 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+section.boutons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vmin;
+    background-color:rgb(222, 127, 246);
+}
+
+.grand-titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144,238,144);
+    font-size: 50px;
+    color:rgb(222, 127, 246);
+
+}
+
+.haut{
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+.maison{
+    justify-content: left;
+    background-color: mintcream;
+    border-radius: 20px;
+}
+
+.haut-crise{
+    padding: 10px 30px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 170, 237);
+}
+
+body.crise{
+    background-color: pink;
+}
+
+.bouton-crise{
+    align-items: center;
+    background-color: aqua;
+    margin: 20px 100px;
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin-bottom: 180px;
+}
+
+body.respiration{
+    background-color: pink;
+}
+
+.cercle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    animation: respiration 19s infinite;
+    margin-top: 250px;
+    margin-left: 130px;
+  }
+  
+  @keyframes respiration {
+    0% {
+      transform: scale(1);
+      background-color: lightblue;
+    }
+    21.05% {
+      transform: scale(2);
+      background-color: lightgreen;
+    }
+    57.9% {
+      transform: scale(2);
+      background-color: lightyellow;
+    }
+    100% {
+      transform: scale(1);
+      background-color: lightcoral;
+    
+  }
+}
+  
+  .cercle::before {
+    content: "Inspirez";
+    animation: texte-inspire 19s infinite;
+  }
+  
+  @keyframes texte-inspire {
+    0%, 21.05% {
+      content: "Inspirez";
+    }
+    21.06%, 57.09% {
+      content: "Retenez";
+    }
+    57.1%, 100% {
+      content: "Expirez";
+    }
+    
+  }
+
+  section.boutons-bis{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vmin;
+}
+
+body.distraction{
+    background-color: rgb(123, 123, 226);
+}
+
+.mot{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 250px;
+    margin-left: 130px;
+  }
+
+.mot:before {
+    content: "épelez les mots suivants à l'envers";
+    animation: mot 15s infinite;
+  }
+
+  @keyframes mot {
+    0%, 21.05% {
+      content: "chat";
+    }
+    21.06%, 57.09% {
+      content: "table";
+    }
+    57.1%, 100% {
+      content: "maison";
+    }
+  }
